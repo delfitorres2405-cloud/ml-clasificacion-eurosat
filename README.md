@@ -54,7 +54,7 @@ Se ha dividido el dataset en tres conjuntos usando `stratify`, para que cada uno
 | Validación | 20 % | 5.400 | Comparar configuraciones y frenar el entrenamiento (early stopping) |
 | Testeo | 20 % | 5.400 | Evaluación final con datos que el modelo nunca vio |
 
-Los píxeles quedan en su escala original (0-255). En las redes neuronales el escalado se hace dentro del propio modelo con una capa `Rescaling`, y los árboles no lo necesitan.
+Los píxeles quedan en su escala original (0-255). En las redes neuronales, la normalización se hace dentro del propio modelo con una capa `Rescaling`, y los árboles no lo necesitan.
 
 ## Modelos implementados
 

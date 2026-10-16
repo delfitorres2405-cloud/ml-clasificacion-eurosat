@@ -72,7 +72,7 @@ Luego, se implementaron redes neuronales utilizando Transfer Learning, con el ob
 Se ha utilizado MobileNetV2 preentrenada con ImageNet, sin su clasificador original (`include_top=False`) y con los pesos congelados (`trainable = False`). Arriba se ha agregado una capa `GlobalAveragePooling2D`, un `Dropout(0.3)` y una capa densa de 10 neuronas, y se ha entrenado con giros aleatorios como aumento de datos.
 
 - **Versión 1 (64×64):** con las imágenes en su tamaño original.
-- **Versión 2 (128×128):** se ha agregado una capa `Resizing` dentro del modelo para agrandar las imágenes, porque MobileNetV2 fue entrenada con imágenes de 224×224 y con 64×64 la validación se estancaba.
+- **Versión 2 (128×128):** se agregó una capa `Resizing` dentro del modelo para aumentar la resolución de entrada, ya que MobileNetV2 fue preentrenada con imágenes de 224×224 píxeles y, al utilizar un tamaño de 64×64, la accuracy de validación se estancaba.
 
 ### 3. Modelos basados en árboles 🌳
 

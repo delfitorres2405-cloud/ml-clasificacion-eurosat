@@ -30,7 +30,7 @@ Las imágenes están etiquetadas en 10 clases:
 | River | Ríos |
 | SeaLake | Mares y lagos |
 
-Las clases están levemente desbalanceadas (casi todas tienen entre 2.500 y 3.000 imágenes, aunque `Pasture` tiene solo 2.000). No es un desbalance grave, pero además de analizar el Accuracy, se ha tenido en cuenta el **F1 por clase** y **F1 micro**.
+Las clases están levemente desbalanceadas (casi todas tienen entre 2.500 y 3.000 imágenes, aunque `Pasture` tiene solo 2.000). No es un desbalance grave, pero además de analizar el **Accuracy** de los modelos, se ha tenido en cuenta el **F1 por clase** y **F1 micro**.
 
 El dataset se descarga solo con `torchvision` la primera vez que se corre el notebook.
 
